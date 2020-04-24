@@ -1,8 +1,8 @@
 # SQLAlchemy - Surfs Up!
 
-Was treated to a vacation to Honolulu, Hawaii between September 1 to September 7 of 2011. Will be doing some climate analysis on the area during that past time period.
+Was treated to a vacation to Honolulu, Hawaii between September 1 to September 7 of 2011. Will be doing some climate analysis on the area during that time period.
 
-**Objectives of the Research Project is to illustrate**
+**Objectives of the Climate Analysis is to illustrate:**
 - SQLAlchemy ORM queries
 - Pandas
 - Matplotlib
@@ -12,7 +12,7 @@ Was treated to a vacation to Honolulu, Hawaii between September 1 to September 7
 
 #### Part 1: Precipitation Analysis
 Precipitation Analysis shows the following below:
-- SQLAlchemy ORM queries retrieving precipitation data for the last 12 months
+- SQLAlchemy ORM queries retrieving precipitation data for the last 12 months of the dataset
 - Loading queries into a Pandas DataFrame
 - Using DataFrame line plot method to plot precipitation data for the dates between  08/23/2016 to 08/23/2017
 
@@ -20,7 +20,7 @@ Precipitation Analysis shows the following below:
 
 #### Part 2: Station Analysis
 Station Analysis shows the following below:
-- SQLAlchemy ORM queries retrieving station data of the most active station(Station USC00519281 located in Waihee, HI) and its temperature observation data(TOBS) in the last 12 months
+- SQLAlchemy ORM queries retrieving station data of the most active station(Station USC00519281 located in Waihee, HI) and its temperature observation data(TOBS) in the last 12 months of the dataset
 - Loading queries into a Pandas DataFrame
 - Using DataFrame plot method to plot a histogram for the temperature observations for dates between 08/23/2016 to 08/23/2017 
 
@@ -58,7 +58,7 @@ Temperature Analysis I shows the following below:
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Bonus_TempAnI_tobs_JunDec_sctrplt.png)
 
 
-*After completing test, and assuming a 5% significant level, we received a p value of 4.193529835915755e-187 so reject the Null Hypothesis and accept the Alternative Hypothesis that there is a meaningful and statistically significant difference in temperature between June and December*
+*After completing test, and assuming a 5% significant level, we received a p value of 4.193529835915755e-187 so the Null Hypothesis is rejected and the Alternative Hypothesis is accepted. This means that there is a meaningful and statistically significant difference in temperatures between June and December.*
 
 
 
@@ -67,6 +67,12 @@ Temperature Analysis II shows the following below:
 - SQLAlchemy ORM queries to calculate the minimum, average, and maximum temperatures for the previous year of trip dates (previous year range: 09/01/2010 to 09/07/2010)
 - Loading queries into a Pandas DataFrame
 - Using DataFrame bar plot method with an error bar for the average temperature observations for dates between 09/01/2010 to 09/07/2010
+
+![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Bonus_TempAnII_avetemp.png)
+
+
+#### Daily Rainfall Average
+
 
 
 
