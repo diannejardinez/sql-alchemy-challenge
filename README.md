@@ -10,7 +10,7 @@ Was treated to a vacation to Honolulu, Hawaii between September 1 to September 7
 
 ## Climate Analysis and Exploration
 
-#### Part 1: Precipitation Analysis
+### Part 1: Precipitation Analysis
 Precipitation Analysis shows the following below:
 - SQLAlchemy ORM queries retrieving precipitation data for the last 12 months of the dataset
 - Loading queries into a Pandas DataFrame
@@ -18,7 +18,7 @@ Precipitation Analysis shows the following below:
 
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Precipitation_Analysis.png)
 
-#### Part 2: Station Analysis
+### Part 2: Station Analysis
 Station Analysis shows the following below:
 - SQLAlchemy ORM queries retrieving station data of the most active station(Station USC00519281 located in Waihee, HI) and its temperature observation data(TOBS) in the last 12 months of the dataset
 - Loading queries into a Pandas DataFrame
@@ -27,7 +27,7 @@ Station Analysis shows the following below:
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Station_Analysis_USC00519281.png)
 
 
-#### Part 3: Climate App
+### Part 3: Climate App
 Climate App shows a Flask API based on the queries below:
 - Homepage route:
 	- Listing all available routes
@@ -50,7 +50,7 @@ Climate App shows a Flask API based on the queries below:
 
 ## Bonus: Other Recommended Analyses
 
-#### Temperature Analysis I
+### Temperature Analysis I
 Temperature Analysis I shows the following below:
 - Identifies the average temperature in June and December at all stations across all available years in the dataset
 
@@ -62,7 +62,7 @@ Temperature Analysis I shows the following below:
 
 
 
-#### Temperature Analysis II
+### Temperature Analysis II
 Temperature Analysis II shows the following below:
 - SQLAlchemy ORM queries to calculate the minimum, average, and maximum temperatures for the previous year of trip dates (previous year range: 09/01/2010 to 09/07/2010)
 - Loading queries into a Pandas DataFrame
@@ -71,7 +71,7 @@ Temperature Analysis II shows the following below:
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Bonus_TempAnII_avetemp.png)
 
 
-#### Daily Rainfall Average
+### Daily Rainfall Average
 - SQLAlchemy ORM queries to calculate precipitation for all stations in the dataset for the previous year of trip dates (previous year range: 09/01/2010 to 09/07/2010)
 - SQLAlchemy ORM queries to calculate the the daily minimum, average, and maximum temperatures for the trip dates between 09/01/2011 to 09/07/2011
 - Loading 09/01/2011 to 09/07/2011 queries into a Pandas DataFrame
