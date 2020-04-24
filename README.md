@@ -1,6 +1,6 @@
 # SQLAlchemy - Surfs Up!
 
-Being treated to a vacation to Honolulu, Hawaii between September 1 to September 7. Will be doing some climate analysis on the area.
+Was treated to a vacation to Honolulu, Hawaii between September 1 to September 7 of 2011. Will be doing some climate analysis on the area during that past time period.
 
 **Objectives of the Research Project is to illustrate**
 - SQLAlchemy ORM queries
@@ -8,9 +8,9 @@ Being treated to a vacation to Honolulu, Hawaii between September 1 to September
 - Matplotlib
 - Flask API
 
-#### Climate Analysis and Exploration
+## Climate Analysis and Exploration
 
-###### Part 1: Precipitation Analysis
+#### Part 1: Precipitation Analysis
 Precipitation Analysis shows the following below:
 - SQLAlchemy ORM queries retrieving precipitation data for the last 12 months
 - Loading queries into a Pandas DataFrame
@@ -18,7 +18,7 @@ Precipitation Analysis shows the following below:
 
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Precipitation_Analysis.png)
 
-###### Part 2: Station Analysis
+#### Part 2: Station Analysis
 Station Analysis shows the following below:
 - SQLAlchemy ORM queries retrieving station data of the most active station(Station USC00519281 located in Waihee, HI) and its temperature observation data(TOBS) in the last 12 months
 - Loading queries into a Pandas DataFrame
@@ -27,10 +27,10 @@ Station Analysis shows the following below:
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Station_Analysis_USC00519281.png)
 
 
-###### Part 3: Climate App
+#### Part 3: Climate App
 Climate App shows a Flask API based on the queries below:
 - Homepage route:
-	-Listing all available routes
+	- Listing all available routes
 
 - `/api/v1.0/precipitation` route:
 	- Returning a JSON representation of a dictionary of dates and precipitation values for all stations from the dataset
@@ -46,5 +46,29 @@ Climate App shows a Flask API based on the queries below:
 
 - `/api/v1.0/<start>/<end>` route:
 	- User is able to specify a start and end date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for that specific date range
+
+
+## Bonus: Other Recommended Analyses
+
+#### Temperature Analysis I
+Temperature Analysis I shows the following below:
+- Identifies the average temperature in June and December at all stations across all available years in the dataset
+
+- Conduct an unpaired independent t-test for two independent datasets to determine if there is a statistical difference between temperature means between June and December. 
+![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Bonus_TempAnI_tobs_JunDec_sctrplt.png)
+
+
+*After completing test, and assuming a 5% significant level, we received a p value of 4.193529835915755e-187 so reject the Null Hypothesis and accept the Alternative Hypothesis that there is a meaningful and statistically significant difference in temperature between June and December*
+
+
+
+#### Temperature Analysis II
+Temperature Analysis II shows the following below:
+- SQLAlchemy ORM queries to calculate the minimum, average, and maximum temperatures for the previous year of trip dates (previous year range: 09/01/2010 to 09/07/2010)
+- Loading queries into a Pandas DataFrame
+- Using DataFrame bar plot method with an error bar for the average temperature observations for dates between 09/01/2010 to 09/07/2010
+
+
+
 
 	
