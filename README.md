@@ -72,7 +72,12 @@ Temperature Analysis II shows the following below:
 
 
 #### Daily Rainfall Average
+- SQLAlchemy ORM queries to calculate precipitation for all stations in the dataset for the previous year of trip dates (previous year range: 09/01/2010 to 09/07/2010)
+- SQLAlchemy ORM queries to calculate the the daily minimum, average, and maximum temperatures for the trip dates between 09/01/2011 to 09/07/2011
+- Loading 09/01/2011 to 09/07/2011 queries into a Pandas DataFrame
+- Using DataFrame area plot method for the minimum, average, and maximum temperatures for the trip dates between 09/01/2011 to 09/07/2011
 
+![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Bonus_RainfallAve_dailytemp_areaplt.png)
 
 
 
