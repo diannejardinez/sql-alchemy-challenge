@@ -8,8 +8,9 @@ Being treated to a vacation to Honolulu, Hawaii between September 1 to September
 - Matplotlib
 - Flask API
 
-Climate Analysis and Exploration
-**Part 1: Precipitation Analysis**
+#### Climate Analysis and Exploration
+
+###### Part 1: Precipitation Analysis
 Precipitation Analysis shows the following below:
 - SQLAlchemy ORM queries retrieving precipitation data for the last 12 months
 - Loading queries into a Pandas DataFrame
@@ -17,15 +18,16 @@ Precipitation Analysis shows the following below:
 
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Precipitation_Analysis.png)
 
-**Part 2: Station Analysis**
+###### Part 2: Station Analysis
 Station Analysis shows the following below:
 - SQLAlchemy ORM queries retrieving station data of the most active station(Station USC00519281 located in Waihee, HI) and its temperature observation data(TOBS) in the last 12 months
 - Loading queries into a Pandas DataFrame
 - Using DataFrame plot method to plot a histogram for the temperature observations for dates between 08/23/2016 to 08/23/2017 
+
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Station_Analysis_USC00519281.png)
 
 
-**Part 3: Climate App**
+###### Part 3: Climate App
 Climate App shows a Flask API based on the queries below:
 - Homepage route:
 	-Listing all available routes
