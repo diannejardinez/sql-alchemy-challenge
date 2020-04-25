@@ -14,7 +14,7 @@ Was treated to a vacation to Honolulu, Hawaii between September 1 to September 7
 Precipitation Analysis shows the following below:
 - SQLAlchemy ORM queries retrieving precipitation data for the last 12 months of the dataset
 - Loading queries into a Pandas DataFrame
-- Using DataFrame line plot method to plot precipitation data for the dates between  08/23/2016 to 08/23/2017
+- Using DataFrame line plot method to plot precipitation data for the dates between 08/23/2016 to 08/23/2017
 
 ![](https://github.com/diannejardinez/sql-alchemy-challenge/blob/master/Output_data/Precipitation_Analysis.png)
 
@@ -33,13 +33,14 @@ Climate App shows a Flask API based on the queries below:
 	- Listing all available routes
 
 - `/api/v1.0/precipitation` route:
-	- Returning a JSON representation of a dictionary of dates and precipitation values for all stations from the dataset
+	- Returning a JSON representation of a dictionary of dates and precipitation values for all stations from precipitation data for the dates between 08/23/2016 to 08/23/2017
 
 - `/api/v1.0/stations` route:
-	- Returning a JSON list of stations from the dataset
+	- Returning a JSON list of stations with station and station name from the dataset
 
 - `/api/v1.0/tobs` route:
-	- Returning a JSON list of temperature observations(TOBS) for the previous year of the most active station last year(Date range: DATE to DATE for active station STATION located in LOCATION)
+	- Returning a JSON list of temperature observations(TOBS) for the previous year of the most active station last year
+	(Date range: 08/23/2016 to 08/23/2017 for active station USC00519281 located in Waihee, HI)
 	
 - `/api/v1.0/<start>` route:
 	- User is able to specify a date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for that specific date
