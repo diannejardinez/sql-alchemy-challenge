@@ -39,7 +39,7 @@ Climate App shows a Flask API based on the queries below:
 	- Returning a JSON list of stations from the dataset
 
 - `/api/v1.0/tobs` route:
-	- Returning a JSON list of temperature observations(TOBS) for the previous year of the most active station last year(Date range: 2015-08-24 to 2016-08-23 for active station USC00519397 located in Waikiki, HI)
+	- Returning a JSON list of temperature observations(TOBS) for the previous year of the most active station last year(Date range: DATE to DATE for active station STATION located in LOCATION)
 	
 - `/api/v1.0/<start>` route:
 	- User is able to specify a date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for that specific date
