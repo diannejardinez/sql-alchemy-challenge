@@ -43,7 +43,7 @@ Climate App shows a Flask API based on the queries below:
 	(Date range: 08/23/2016 to 08/23/2017 for active station USC00519281 located in Waihee, HI)
 	
 - `/api/v1.0/<start>` route:
-	- User is able to specify a date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for that specific date from active station USC00519281
+	- User is able to specify a date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for all dates greater than and equal to the start date from active station USC00519281
 
 - `/api/v1.0/<start>/<end>` route:
 	- User is able to specify a start and end date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for that specific date range from active station USC00519281

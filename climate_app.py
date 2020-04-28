@@ -145,11 +145,11 @@ def start_date(start):
     session = Session(engine)
 
     # Query to calculate the min, avg, and max Temperatures for a given date in the format %Y-%m-%d
-    # When given the start only, calculate TMIN, TAVG, and TMAX for all dates EQUAL to the start date
+    # When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date
     # From active station USC00519281
     results = session.query(Measurement.date, func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
         filter(Measurement.station == 'USC00519281').\
-        filter(func.strftime("%Y-%m-%d", Measurement.date) == start).all()
+        filter(func.strftime("%Y-%m-%d", Measurement.date) >= start).all()
     
     #For loop and if statement for results query where if user api route date equals query date
     for result in results:
